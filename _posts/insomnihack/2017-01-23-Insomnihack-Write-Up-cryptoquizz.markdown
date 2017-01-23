@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Write UP Insomniack!"
+title:  "Write UP Insomniack cryptoquizz!"
 date:   2017-01-23 16:00:00 +0100
 categories: jekyll update
 ---
 
------------------CRYPTOQUIZZ---------------------
-
-
 For this first chall we are provided a simple  *quizz.teaser.insomnihack.ch:1031*. We try to connect to the ip and the port using netcat, and then we are confronted with this:
-![cryptoQuizz]({{ site.url }}/assets/cryptoQuizz.png)
+![cryptoQuizz]({{ site.url }}/assets/insomnihack/cryptoQuizz.png)
 
 Looks like an easy challenge, we just have to find the birthdate of serveral people. We could just try to find them all and then do an *if-serial*, but we'll be smarter than that and make a little script
 {% highlight python %}
