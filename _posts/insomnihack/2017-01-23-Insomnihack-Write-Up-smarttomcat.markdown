@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Write UP Insomniack smarttomcat!"
+title:  "Write UP Insomnihack smarttomcat!"
 date:   2017-01-23 16:50:00 +0100
 categories: jekyll update
 ---
